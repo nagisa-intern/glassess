@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Comic.create(
   :title => "電波青年",
-  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……"
+  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……",
+  :chip_amount => 0
 );
 Author.create(
   :name => "安田佳澄",
@@ -16,7 +17,8 @@ Author.create(
 ComicData.create(
   :comic_id => 1,
   :title => "第1話",
-  :episode => 1
+  :episode => 1,
+  :page => 36
 );
 ComicAuthor.create(
   :comic_id => 1,
@@ -25,7 +27,8 @@ ComicAuthor.create(
 
 Comic.create(
   :title => "電波青年",
-  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……"
+  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……",
+  :chip_amount => 0
 );
 Author.create(
   :name => "安田佳澄",
@@ -34,7 +37,8 @@ Author.create(
 ComicData.create(
   :comic_id => 2,
   :title => "第1話",
-  :episode => 1
+  :episode => 1,
+  :page => 36
 );
 ComicAuthor.create(
   :comic_id => 2,
@@ -44,7 +48,8 @@ ComicAuthor.create(
 
 Comic.create(
   :title => "電波青年",
-  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……"
+  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……",
+  :chip_amount => 0
 );
 Author.create(
   :name => "安田佳澄",
@@ -53,7 +58,8 @@ Author.create(
 ComicData.create(
   :comic_id => 3,
   :title => "第1話",
-  :episode => 1
+  :episode => 1,
+  :page => 36
 );
 ComicAuthor.create(
   :comic_id => 3,
@@ -63,7 +69,8 @@ ComicAuthor.create(
 
 Comic.create(
   :title => "電波青年",
-  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……"
+  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……",
+  :chip_amount => 0
 );
 Author.create(
   :name => "安田佳澄",
@@ -72,7 +79,8 @@ Author.create(
 ComicData.create(
   :comic_id => 4,
   :title => "第1話",
-  :episode => 1
+  :episode => 1,
+  :page => 36
 );
 ComicAuthor.create(
   :comic_id => 4,
@@ -82,7 +90,8 @@ ComicAuthor.create(
 
 Comic.create(
   :title => "電波青年",
-  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……"
+  :summary => "ある夜、逃亡中の殺人犯・瀬良不二夫は泣きながらデリヘルを呼ぶ。現れたデリヘル嬢・伊丹洋子は、彼の個人ラジオ「フジオのラジオ」の大ファンで、彼の正体に気付いてしまいーー。WEBラジオによって結びつけられた、笑わせることに飢えたDJとリスナー。二人の歪んだ秘密の逃避行が始まる……",
+  :chip_amount => 0
 );
 Author.create(
   :name => "安田佳澄",
@@ -91,7 +100,8 @@ Author.create(
 ComicData.create(
   :comic_id => 5,
   :title => "第1話",
-  :episode => 1
+  :episode => 1,
+  :page => 36
 );
 ComicAuthor.create(
   :comic_id => 5,
