@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_01_103450) do
+ActiveRecord::Schema.define(version: 2018_09_01_103853) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2018_09_01_103450) do
     t.integer "comic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "page"
     t.index ["comic_id"], name: "index_comic_data_on_comic_id"
   end
 
