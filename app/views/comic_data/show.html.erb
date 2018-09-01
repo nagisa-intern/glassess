@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @comic_datum.title %>
+</p>
+
+<p>
+  <strong>Episode:</strong>
+  <%= @comic_datum.episode %>
+</p>
+
+<p>
+  <strong>Comic:</strong>
+  <%= @comic_datum.comic %>
+</p>
+
+<%= link_to 'Edit', edit_comic_datum_path(@comic_datum) %> |
+<%= link_to 'Back', comic_data_index_path %>

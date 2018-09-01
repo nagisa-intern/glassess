@@ -1,0 +1,2 @@
+module ComicAuthorsHelper
+end
