@@ -44,6 +44,8 @@ $ vagrant reload
 - rails s -b 0.0.0.0
 ここでhttp://localhost:3000/ に行くとページが確認できます
 
+
+
 # 2回目以降
 glassess フォルダに移動
 - vagrant up
