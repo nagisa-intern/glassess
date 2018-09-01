@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/glassess/":{"guestpath":"/home/glassess","hostpath":"/Users/tsuyoshi/git/glassess","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/tsuyoshi/git/glassess","disabled":false,"__vagrantfile":true}}}
