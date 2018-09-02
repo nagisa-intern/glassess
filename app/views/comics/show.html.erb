@@ -1,14 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @comic.title %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 img-wrap">
+      <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/comic/' + @comic.id.to_s + '/rec_thumb.jpeg', :class => 'rec-thumb img-fluid' %>
+    </div>
+    <div class="col-md-6">
+      <h2>
+        <%= @comic.title %>
+      </h2>
 
-<p>
-  <strong>Summary:</strong>
-  <%= @comic.summary %>
-</p>
+      <h4>あらすじ</h4>
+      <p>
+        <%= @comic.summary %>
+      </p>
+    </div>
+  </div>
+</div>
+
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- スライドさせる画像の設定 -->
   <div class="carousel-inner" style="text-align:center">
@@ -42,7 +51,3 @@
   </a>
 </div><!-- /.carousel -->
 
-<div>
-<%= link_to 'Edit', edit_comic_path(@comic) %> |
-<%= link_to 'Back', comics_path %>
-</div>
