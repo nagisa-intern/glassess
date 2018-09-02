@@ -1,29 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Comics</h1>
+<h2>マンガ一覧</h2>
+<p stype="margin-bottom: 20px"></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Summary</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+  <div class="row">
     <% @comics.each do |comic| %>
-      <tr>
-        <td><%= comic.title %></td>
-        <td><%= comic.summary %></td>
-        <td><%= link_to 'Show', comic %></td>
-        <td><%= link_to 'Edit', edit_comic_path(comic) %></td>
-        <td><%= link_to 'Destroy', comic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-4" style="margin-bottom: 40px">
+        <div class="card">
+          <%= link_to( image_tag('https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/comic/' + comic.id.to_s + '/square_thumb.jpeg' , :class => 'img-fluid'), comic_path(comic)) %>
+          <div class="card-body">
+            <p><b><%= comic.title %></b></p>
+            <p><%= comic.summary %></p>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
+  </div>
 <br>
-
-<%= link_to 'New Comic', new_comic_path %>
