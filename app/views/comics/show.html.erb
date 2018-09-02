@@ -53,8 +53,10 @@
 
 <div>
   投げ銭<strong><%= @comic.chip_amount %></strong>
+  <div id="add-tip-flash-wrap">
+  </div>
   <%= form_tag(comics_show_post_path, :action => 'show', :remote => true) do %>
-    <%= text_field_tag :add_tip %>
+    <%= number_field_tag :add_tip %>
     <%= submit_tag "投げ銭" %>
   <% end %>
 </div>
