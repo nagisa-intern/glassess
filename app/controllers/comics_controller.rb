@@ -10,6 +10,15 @@ class ComicsController < ApplicationController
   # GET /comics/1
   # GET /comics/1.json
   def show
+    @add_tip = params[:add_tip]
+    if @add_tip.present?
+      @comic.chip_amount += @add_tip.to_i
+      @comic.save
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /comics/new
