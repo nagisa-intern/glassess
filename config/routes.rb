@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'comics#index'
   resources :comic_authors
   resources :comic_data
   resources :authors
