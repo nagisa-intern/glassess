@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
   <%= @comic.title %>
 </p>
 
+<h4>あらすじ</h4>
 <p>
-  <strong>Summary:</strong>
   <%= @comic.summary %>
 </p>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -39,7 +38,3 @@
   </a>
 </div><!-- /.carousel -->
 
-<div>
-<%= link_to 'Edit', edit_comic_path(@comic) %> |
-<%= link_to 'Back', comics_path %>
-</div>
