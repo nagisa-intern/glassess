@@ -43,6 +43,13 @@
 </div><!-- /.carousel -->
 
 <div>
+  投げ銭<strong><%= @comic.chip_amount %></strong>
+  <%= form_tag(comics_show_post_path, :action => 'show', :remote => true) do %>
+    <%= text_field_tag :add_tip %>
+    <%= submit_tag "投げ銭" %>
+  <% end %>
+</div>
+<div>
 <%= link_to 'Edit', edit_comic_path(@comic) %> |
 <%= link_to 'Back', comics_path %>
 </div>
