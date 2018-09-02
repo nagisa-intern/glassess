@@ -14,6 +14,7 @@ class ComicsController < ApplicationController
     if @add_tip.present?
       @comic.chip_amount += @add_tip.to_i
       @comic.save
+      flash[:success] = '応援ありがとうございます' + @add_tip + '円加算されました！'
     end
     respond_to do |format|
       format.html
