@@ -52,10 +52,12 @@
 </div><!-- /.carousel -->
 
 <div>
-  投げ銭<strong><%= @comic.chip_amount %></strong>
+  投げ銭総額<strong><%= @comic.chip_amount %></strong>
   <%= form_tag(comics_show_post_path, :action => 'show', :remote => true) do %>
-    <%= text_field_tag :add_tip %>
-    <%= submit_tag "投げ銭" %>
+  <div class='form-group'>
+  <%= number_field_tag :add_tip , '', class: 'form-control', style: 'width: 30%;'%>
+    <button type="button" class="btn btn-primary">投げ銭する</button>
+  </div>
   <% end %>
 </div>
 <div>
