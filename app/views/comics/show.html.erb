@@ -52,12 +52,15 @@
 </div><!-- /.carousel -->
 
 <div>
+  <hr>
+  <h3>投げ銭しよう！</h3>
+  <p>更新の遅い作者も、投げ銭が集まれば更新するかも・・・</p>
   投げ銭総額<strong><%= @comic.chip_amount %></strong>
   <div id="add-tip-flash-wrap"></div>
   <%= form_tag(comics_show_post_path, :action => 'show', :remote => true) do %>
     <div class='form-group'>
-      <%= number_field_tag :add_tip , '', class: 'form-control', style: 'width: 30%;'%>
-      <button type="button" class="btn btn-primary">投げ銭する</button>
+      <%= number_field_tag :add_tip , '', class: 'form-control', style: 'width: 30%; margin-bottom: 10px'%>
+      <%= submit_tag "投げ銭する！", :class => "btn btn-primary" %>
     </div>
   <% end %>
 </div>
