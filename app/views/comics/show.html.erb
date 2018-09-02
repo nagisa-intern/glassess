@@ -8,21 +8,24 @@
 <p>
   <%= @comic.summary %>
 </p>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- スライドさせる画像の設定 -->
   <div class="carousel-inner" style="text-align:center">
-    <% 10.times do |page_id| %>
+    <% @comic.comic_data.page.times do |page_id| %>
       <% if page_id == 0 %>
         <div class="carousel-item active">
-          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/1/1/000'+page_id.to_s+'.jpeg' %>
+          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/'+@comic.id.to_s+'/'+@comic.comic_data.episode.to_s+'/0000.jpeg', :class => 'img-fluid' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'http://deliver.commons.nicovideo.jp/thumbnail/nc65157?size=l', :class => 'img-fluid' %>
         </div>
       <% elsif page_id < 10 %>
         <div class="carousel-item">
-          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/1/1/000'+page_id.to_s+'.jpeg' %>
+          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/'+@comic.id.to_s+'/'+@comic.comic_data.episode.to_s+'/00'+(@comic.comic_data.page-page_id).to_s+'.jpeg', :class => 'img-fluid' %>
         </div>
       <% else %>
         <div class="carousel-item">
-          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/1/1/00'+page_id.to_s+'.jpeg' %>
+          <%= image_tag 'https://s3-ap-northeast-1.amazonaws.com/nagisa-intern/data/'+@comic.id.to_s+'/'+@comic.comic_data.episode.to_s+'/000'+(@comic.comic_data.page-page_id).to_s+'.jpeg', :class => 'img-fluid' %>
         </div>
       <% end %>
     <% end %>
